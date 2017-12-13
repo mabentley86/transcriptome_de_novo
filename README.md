@@ -19,7 +19,7 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 
 
 ##### Build sqlite databases
-I modified the original `Build_Trinotate_Boilerplate_SQLite_db.pl` script in order to be able to obtain two different databases. One for searching the compact Swiss-Prot database, the other for searching the much larger TrEMBL database. 
+I modified the original Trinitate `Build_Trinotate_Boilerplate_SQLite_db.pl` script in order to be able to obtain two different databases. One for searching the compact Swiss-Prot database, the other for searching the much larger TrEMBL database. 
 
 ```
 Build_Trinotate_Boilerplate_SQLite_db_sprot.pl Trinotate_sprot
