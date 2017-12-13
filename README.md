@@ -16,10 +16,15 @@ Trinity, developed at the Broad Institute and the Hebrew University of Jerusalem
 ## Trinotate [(Manual)](https://trinotate.github.io/) 
 Trinotate is a comprehensive annotation suite designed for automatic functional annotation of transcriptomes, particularly de novo assembled transcriptomes, from model or non-model organisms.
 
-### Build BLAST and DIAMOND databases
+##### Build BLAST databases
 ```
 makeblastdb -in uniprot_sprot.fasta -dbtype prot
 makeblastdb -in uniprot_trembl.fasta -dbtype prot
+```
+##### Build DIAMOND databases
+```
+diamond makedb --in uniprot_sprot.fasta -d uniprot_sprot -p 32
+diamond makedb --in uniprot_trembl.fasta -d uniprot_sprot -p 32
 ```
 
 ## DIAMOND [(Manual)](https://github.com/bbuchfink/diamond) 
