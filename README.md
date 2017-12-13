@@ -20,10 +20,16 @@ First run TransDecoder to get the longest ORFs:
 ```
 TransDecoder.LongOrfs -m 100 -t "trinity/"$EXPERIMENT"_trinity.fasta"
 ```
-Convert FASTA to line per sequence
+Convert FASTA to line per sequence:
 ```bash
 perl -pe '/^>/ ? print "\n" : chomp' longest_orfs.pep | tail -n +2 > longest_orfs_clean.pep
 mv longest_orfs_clean.pep longest_orfs.pep
+```
+Split the longest ORFs FASTA file into 25 pieces:
+```bash
+SPLIT_NUM=$((`wc -l < longest_orfs.pep` / 24))
+SPLIT_NUM=$(($SPLIT_NUM - $SPLIT_NUM % 2))
+split -a 3 -l $SPLIT_NUM longest_orfs.pep transdecoder_longorf_split/ --additional-suffix=".pep" --numeric-suffixes=1
 ```
 
 ## Trinotate [(Manual)](https://trinotate.github.io/) 
