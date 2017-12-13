@@ -16,6 +16,16 @@ Trinity, developed at the Broad Institute and the Hebrew University of Jerusalem
 ## Trinotate [(Manual)](https://trinotate.github.io/) 
 Trinotate is a comprehensive annotation suite designed for automatic functional annotation of transcriptomes, particularly de novo assembled transcriptomes, from model or non-model organisms.
 
+
+
+##### Build sqlite databases
+I modified the original `Build_Trinotate_Boilerplate_SQLite_db.pl` script in order to be able to obtain two different databases. One for searching the compact Swiss-Prot database, the other for searching the much larger TrEMBL database. 
+
+```
+Build_Trinotate_Boilerplate_SQLite_db_sprot.pl Trinotate_sprot
+Build_Trinotate_Boilerplate_SQLite_db_trembl.pl Trinotate_trembl
+```
+
 ##### Build BLAST databases
 ```
 makeblastdb -in uniprot_sprot.fasta -dbtype prot
