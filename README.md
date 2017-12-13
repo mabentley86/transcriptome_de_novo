@@ -18,7 +18,7 @@ TransDecoder identifies candidate coding regions within transcript sequences, su
 
 First run TransDecoder to get the longest ORFs:
 ```
-TransDecoder.LongOrfs -m 100 -t "trinity/"$EXPERIMENT"_trinity.fasta"
+TransDecoder.LongOrfs -m 100 -t $EXPERIMENT"_trinity.fasta"
 ```
 Convert FASTA to line per sequence:
 ```bash
