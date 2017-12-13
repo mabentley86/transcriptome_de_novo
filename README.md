@@ -29,7 +29,7 @@ Split the longest ORFs FASTA file into 25 pieces:
 ```bash
 SPLIT_NUM=$((`wc -l < longest_orfs.pep` / 24))
 SPLIT_NUM=$(($SPLIT_NUM - $SPLIT_NUM % 2))
-split -a 3 -l $SPLIT_NUM longest_orfs.pep transdecoder_longorf_split/ --additional-suffix=".pep" --numeric-suffixes=1
+split -a 3 -l $SPLIT_NUM longest_orfs.pep ./ --additional-suffix=".pep" --numeric-suffixes=1
 ```
 
 ## Trinotate [(Manual)](https://trinotate.github.io/) 
