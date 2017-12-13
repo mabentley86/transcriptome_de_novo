@@ -16,6 +16,12 @@ Trinity, developed at the Broad Institute and the Hebrew University of Jerusalem
 ## Trinotate [(Manual)](https://trinotate.github.io/) 
 Trinotate is a comprehensive annotation suite designed for automatic functional annotation of transcriptomes, particularly de novo assembled transcriptomes, from model or non-model organisms.
 
+### Build BLAST and DIAMOND databases
+```
+makeblastdb -in uniprot_sprot.fasta -dbtype prot
+makeblastdb -in uniprot_trembl.fasta -dbtype prot
+```
+
 ## DIAMOND [(Manual)](https://github.com/bbuchfink/diamond) 
 DIAMOND is a sequence aligner for protein and translated DNA searches and functions as a drop-in replacement for the NCBI BLAST software tools. It is suitable for protein-protein search as well as DNA-protein search on short reads and longer sequences including contigs and assemblies, providing a speedup of BLAST ranging up to x20,000. 
 
