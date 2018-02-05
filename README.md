@@ -59,5 +59,14 @@ diamond makedb --in uniprot_trembl.fasta -d uniprot_sprot -p 32
 ## DIAMOND [(Manual)](https://github.com/bbuchfink/diamond) 
 DIAMOND is a sequence aligner for protein and translated DNA searches and functions as a drop-in replacement for the NCBI BLAST software tools. It is suitable for protein-protein search as well as DNA-protein search on short reads and longer sequences including contigs and assemblies, providing a speedup of BLAST ranging up to x20,000. 
 
+
+
+## Blast2GO [(Manual)](https://www.blast2go.com/) 
+Blast2GO is a bioinformatics platform for high-quality functional annotation and analysis of genomic datasets.
+
+## InterProScan 5 [(Manual)](https://github.com/ebi-pf-team/interproscan/wiki/InterProScan5RC6)
+InterProScan is a tool for functional analysis of proteins by classifying them into families and predicting domains and important sites. 
+
+
 ## Appendix
 
